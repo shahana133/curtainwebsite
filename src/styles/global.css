@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* MAIN SECTION PADDING (DESKTOP) */
+section {
+  padding: 100px 10%;
+}
+
+/* =========================
+   TABLET (max 1024px)
+========================= */
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 6%;
+  }
+}
+
+/* =========================
+   MOBILE (max 768px)
+========================= */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (max 480px)
+========================= */
+@media (max-width: 480px) {
+  section {
+    padding: 50px 4%;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 60px 0;
+}
+
+/* TEXT SIDE (optional improvement) */
+.hero-text {
+  flex: 1;
+}
+
+/* IMAGE */
+.hero-img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* BUTTON */
+.hero button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  background: #c79b3b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #a67f2f;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .hero {
+    gap: 30px;
+  }
+
+  .hero-img {
+    width: 380px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+  .hero {
+    gap: 20px;
+  }
+
+  .hero-img {
+    max-width: 280px;
+  }
+
+  .hero button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
